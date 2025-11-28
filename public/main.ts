@@ -1,11 +1,14 @@
 import express from "express";
-import sendInfo from "./SendInfo/SendInfo";
-import stringLog from "./SendInfo/Message";
-import isHomeRoute from "./SendInfo/URL";
+import sendInfo from "../SendInfo/SendInfo";
+import stringLog from "../SendInfo/Message";
+import isHomeRoute from "../SendInfo/URL";
+import path from "path";
 
 const PORT = process.env.PORT || 5000;
 
 const app = express();
+
+app.use(express.static("public"));
 
 app.get("/", (req, res) => {
   if (isHomeRoute(req.url)) {

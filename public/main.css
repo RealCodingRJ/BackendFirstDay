@@ -43,8 +43,8 @@ h2 {
 }
 
 header li a {
-  margin: 1.6rem;
-  font-weight: 900;
+  margin: 1rem;
+  font-weight: 600;
   font-family: sans-serif;
 }
 
@@ -71,5 +71,9 @@ header a {
 @media screen and (max-width: 768px) {
   #container h2 {
     font-size: 21px;
+  }
+
+  header li a {
+    display: none;
   }
 }

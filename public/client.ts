@@ -1,6 +1,13 @@
 const clickableButton = document.getElementById("button");
 
-clickableButton?.addEventListener("click", getDataBackClient);
+function getButtonTitle() {
+  return "Submitted";
+}
+
+clickableButton?.addEventListener("click", () => {
+  clickableButton.textContent = getButtonTitle();
+  getDataBackClient();
+});
 
 function getDataBackClient() {
   alert("WEB Dev is AMAZING...");

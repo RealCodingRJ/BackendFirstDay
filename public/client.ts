@@ -1,14 +1,16 @@
-const clickableButton = document.getElementById("button");
+const lightclickableButton = document.getElementById("lButton");
+const darkclickableButton = document.getElementById("dButton");
 
 function getButtonTitle() {
   return "Submitted";
 }
 
-clickableButton?.addEventListener("click", () => {
-  clickableButton.textContent = getButtonTitle();
-  getDataBackClient();
+darkclickableButton?.addEventListener("click", () => {
+  document.body.style.backgroundColor = "#202020";
+  darkclickableButton.textContent = getButtonTitle();
 });
 
-function getDataBackClient() {
-  alert("WEB Dev is AMAZING...");
-}
+lightclickableButton?.addEventListener("click", () => {
+  lightclickableButton.textContent = getButtonTitle();
+  document.body.style.backgroundColor = "white";
+});

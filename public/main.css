@@ -42,6 +42,17 @@ h2 {
   margin-top: 300px;
 }
 
+#darkDiv {
+  background-color: #333;
+  height: 250px;
+  /* margin-top: 2000px; */
+}
+
+#darkDiv main {
+  position: relative;
+  top: 900px;
+}
+
 header li a {
   margin: 1rem;
   font-weight: 600;
